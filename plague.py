@@ -26,13 +26,11 @@ def text_to_vector(text):
     return Counter(words)
 
 
-str_arr=sys.argv
-
-vector1 = text_to_vector(str_arr[1])
-vector2= text_to_vector(str_arr[2])
-print ('total args = ', len(sys.argv))
-print ('argument list = ', str(sys.argv))
-
+prog=sys.argv[0]
+arg1=sys.argv[1]
+arg2=sys.argv[2]
+vector1 = text_to_vector(arg1)
+vector2= text_to_vector(arg2)
 cosine = get_cosine(vector1, vector2)
 percentage="{:.3%}".format(cosine)
 
