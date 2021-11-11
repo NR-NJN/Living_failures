@@ -1,10 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 11 12:22:19 2021
 
-@author: kaust
-"""
-
+import sys
 import math
 import re
 from collections import Counter
@@ -31,11 +26,12 @@ def text_to_vector(text):
     return Counter(words)
 
 
-text1 = input("enter shit")
-text2 = input("enter some more shit")
+str_arr=sys.argv
 
-vector1 = text_to_vector(text1)
-vector2 = text_to_vector(text2)
+vector1 = text_to_vector(str_arr[1])
+vector2= text_to_vector(str_arr[2])
+print ('total args = ', len(sys.argv))
+print ('argument list = ', str(sys.argv))
 
 cosine = get_cosine(vector1, vector2)
 percentage="{:.3%}".format(cosine)
