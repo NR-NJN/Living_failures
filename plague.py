@@ -8,7 +8,6 @@ This is a temporary script file.
 import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-os.chdir()
 student_files = [doc for doc in os.listdir() if doc.endswith('.txt')]
 student_notes =[open(File).read() for File in  student_files]
 
@@ -19,7 +18,8 @@ vec = vectorize(student_notes)
 s_vectors = list(zip(student_files, vec))
 plague_res = set()                                               
                                                       
-                                                        
+     #To make sure this runs correctly, create a few text files in the same directory as the code.
+    #The code will return the similarities between all of the .txt files stored in the directory.
                                                         
  
 def check_plague():
