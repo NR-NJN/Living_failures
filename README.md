@@ -13,5 +13,8 @@ Now the cosine similarity returns a value between 0 and 1. 1 being completely si
 First I had the program read text files, which worked by itself, but ran into problems, when we tried to connect it to our js code. Hence we modified it to read
 input strings. Both the source code files have been added to this repository
 
+# Side 
+There is another file that does the same thing but with .txt files as well. Which means rather than comparing 2 strings entered by the user, it compares .txt files.
+You can add how many ever .txt files in the same folder as the program, and it will return the similarity between all of them 2 at a time. Basically a permutation where n = number of .txt files you have created, and r = 2.
 # Conclusion
 This stuff is annoying
