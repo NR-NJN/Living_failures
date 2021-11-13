@@ -11,7 +11,7 @@ Now the cosine similarity returns a value between 0 and 1. 1 being completely si
 
 # Problems
 First I had the program read text files, which worked by itself, but ran into problems, when we tried to connect it to our js code. Hence we modified it to read
-input strings
+input strings. Both the source code files have been added to this repository
 
 # Conclusion
 This stuff is annoying
